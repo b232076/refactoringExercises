@@ -23,7 +23,7 @@ public class JobItem {
 	}
 
 	public int getUnitPrice() {
-		return (isLabor) ? employee.getRate() : unitPrice;
+		return (isLabor) ? employee.getRate() : unitPrice;//A abstração não foi capturada, devemos extrair a subclasse. Change Preventers / Hierarquia
 	}
 
 	public Employee getEmployee() {
