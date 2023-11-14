@@ -22,7 +22,7 @@ public class App {
 		kent.getCourses().add(new Course("MC536", false));
 		Assert.assertEquals(4, kent.getCourses().size());
 		kent.getCourses().remove(machinelearning);
-		Assert.assertEquals(3, kent.getCourses().size());
+		Assert.assertEquals(3, kent.getCourses().size());//Intimidade inapropriada - encapsulamento dos métodos que alteram a coleção (hash), pois em cada lugar do código podemos alterar a coleção sem controle. 
 
 		Iterator iter = kent.getCourses().iterator();
 		int count = 0;
